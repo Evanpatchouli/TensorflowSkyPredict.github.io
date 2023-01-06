@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/tensorflow-skypre/favicon.ico"><title>jsml1</title><script>let xwidth = window.screen.width;
+      document.documentElement.style.setProperty("--screenWidth", xwidth + "px");
+      function resetWidth() {
+        xwidth = window.screen.width;
+        document.documentElement.style.setProperty("--screenWidth", xwidth + "px");
+      }
+      //window.addEventListener('resize', resetWidth);
+      const debounce = (fn, delay) => {
+        let timer;
+        return function() {
+          if (timer) {
+            clearTimeout(timer);
+          }
+          timer = setTimeout(() => {
+            fn();
+          }, delay);
+        }
+      };
+      const cancalDebounce = debounce(resetWidth, 100);
+
+      window.addEventListener('resize', cancalDebounce);</script><link href="/tensorflow-skypre/css/about.1ace6d25.css" rel="prefetch"><link href="/tensorflow-skypre/css/chunk-3b25b099.cc023660.css" rel="prefetch"><link href="/tensorflow-skypre/css/chunk-494482e6.b0ef2bd0.css" rel="prefetch"><link href="/tensorflow-skypre/css/chunk-555af194.ca578c29.css" rel="prefetch"><link href="/tensorflow-skypre/css/chunk-70bfea0d.6ed0bd96.css" rel="prefetch"><link href="/tensorflow-skypre/js/about.009b7d0c.js" rel="prefetch"><link href="/tensorflow-skypre/js/chunk-3b25b099.75f8cdf5.js" rel="prefetch"><link href="/tensorflow-skypre/js/chunk-494482e6.7b867c45.js" rel="prefetch"><link href="/tensorflow-skypre/js/chunk-555af194.eab979f9.js" rel="prefetch"><link href="/tensorflow-skypre/js/chunk-70bfea0d.ab6ecaba.js" rel="prefetch"><link href="/tensorflow-skypre/css/app.e79a9c71.css" rel="preload" as="style"><link href="/tensorflow-skypre/css/chunk-vendors.29e6e5d8.css" rel="preload" as="style"><link href="/tensorflow-skypre/js/app.02ab775a.js" rel="preload" as="script"><link href="/tensorflow-skypre/js/chunk-vendors.c30b6f87.js" rel="preload" as="script"><link href="/tensorflow-skypre/css/chunk-vendors.29e6e5d8.css" rel="stylesheet"><link href="/tensorflow-skypre/css/app.e79a9c71.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but jsml1 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/tensorflow-skypre/js/chunk-vendors.c30b6f87.js"></script><script src="/tensorflow-skypre/js/app.02ab775a.js"></script></body></html>
